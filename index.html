@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <p id="message"></p> -->
+  <!-- <input type="text" id="demo"><br> -->
+  <!-- <button onclick="myFunction()">Try It</button>
+  <p id="demo"></p> -->
+  <p id="demo">Hello World</p>
+  <script>
+    // let text = '{ "name":"John", "age":"39", "city":"New York"}';
+    // let obj=JSON.parse(text,function(key,flag){
+    //     if(key == "city"){
+    //         return flag.toUpperCase();
+    //     }
+    //     else{
+    //         return flag;
+    //     }
+    // })
+    //       var xmlhttp = new XMLHttpRequest();
+    // xmlhttp.onreadystatechange = function() {
+    //   if (this.readyState == 4 && this.status == 200) {
+    //     var myObj = JSON.parse(this.responseText);
+    //     document.getElementById("demo").innerHTML = myObj.name;
+    //   }
+    // };
+    // xmlhttp.open("GET", "json_demo.txt", true);
+    // xmlhttp.send();
+    // let obj = {"name":"John", "age":30, "city":"New York"}
+    // let myJSON = JSON.stringify(obj)
+    // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // function labor(name,job,born){
+    //    this.name=name;
+    //    this.job=job;
+    //    this.born=born;
+    // }
+    // labor.prototype.city = "New york"
+    // let employ = new labor("john deo","mason","1980")
+    // let demo = new labor("Smith","Painter","1970")
+    // let text = ""
+    // let i=10;
+    // do{
+    //     text +=i + "<br>"
+    //     i++;
+    // }
+    // while(i <=20 )
+    // document.getElementById("demo").innerHTML = text;
+    // let demo = ""
+    // let j="";
+    // do{
+    //     demo +=j +"<br>"
+    //     j++
+    // }
+    // while(j <=10)
+
+    // const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    // let info = ""
+    // for (let a of cars){
+    //     info +=  a + " ";
+    // }
+    // let text = "Javascrpit";
+    // let info = "";
+    // for (let a of text){
+    //     info += a +  " ";
+    // }
+    // function monthCheck(){
+    //     let text;
+    //     month = document.getElementById("myInput").value;
+    //     switch(month){
+    //         case "January":
+    //         text = "January";
+    //         break;
+    //         case "feb":
+    //         text = "feb";
+    //         break;
+    //         case "march":
+    //         text = "march";
+    //         break;
+    //         case "april":
+    //         text = "april";
+    //         break;
+    //         case "may":
+    //         text = "may";
+    //         break;
+    //         case "june":
+    //         text = "june";
+    //         break;
+    //         case "july":
+    //         text = "july";
+    //         break;
+    //         case "august":
+    //         text = "august";
+    //         break;
+    //         case "september":
+    //         text = "september";
+    //         break;
+    //         case "october":
+    //         text = "october";
+    //         break;
+    //         case "november":
+    //         text = "november";
+    //         break;
+    //         case "december":
+    //         text = "december";
+    //         break;
+    //         default:
+    //             text="wrong input"
+    //     }
+    //     document.getElementById("demo").innerHTML = text;
+    // }
+    // function myFunction() {
+    //   const message = document.getElementById("message");
+    //   message.innerHTML = "";
+    //   let x = document.getElementById("demo").value;
+    //   try {
+    //     if(x == "")  throw "is Empty";
+    //     if(isNaN(x)) throw "not a number";
+    //     if(x > 10)   throw "too high";
+    //     if(x < 5)  throw "too low";
+    //   }
+    //   catch(err) {
+    //     message.innerHTML = "Input " + err;
+    //   }
+    // }
+    // const letters = new Set(["a","b","c"])
+    // // letters.add =(d)
+    // let text = ""
+    // letters.forEach(function(value){
+    //   text += value + "<br>"
+    // })
+    // function myDisplay(any){
+    //   document.getElementById("demo").innerHTML = any
+    // }
+    // let myPromise = new Promise(function(myReslove, MyReject){
+    //   debugger
+    //   let req = new XMLHttpRequest();
+    //   req.open("GET","mycar.html");
+    //   req.onload = function(){
+    //     if(req.status == 200){
+    //       myReslove(req.response)
+    //     }
+    //     else{
+    //       MyReject("File not Found")
+    //     }
+    //   };
+    //   req.send()
+    // })
+    // myPromise.then(
+    //   function(value){myDisplay(value);},
+    //   function(error){myDisplay(error);}
+    //   )
+
+
+
+    // person.lang = "english"
+    // document.getElementById("demo").innerHTML = person.lastName.toLocaleUpperCase()
+
+    // function sum(...args){
+    //   let sum = 0;
+    //   for (let a of args) sum += a;
+    //   return sum;
+
+    // }
+    // let  z = sum(23,50,18,18,54,22,66,22,44,85,90,21,54)
+    // const fruits = [
+    //   ["apples",300],
+    //   ["pears",900],
+    // ["banana",500]
+    // ];
+    // const myObj = Object.fromEntries(fruits);
+
+    // const myArr = [
+    //   {name:"X00",price:100 },
+    //   {name:"X01",price:100 },
+    //   {name:"X02",price:100 },
+    //   {name:"X03",price:100 },
+    //   {name:"X04",price:110 },
+    //   {name:"X05",price:110 },
+    //   {name:"X06",price:110 },
+    //   {name:"X07",price:110 },
+    //   {name:"X08",price:120 },
+    //   {name:"X09",price:120 },
+    //   {name:"X10",price:120 },
+    //   {name:"X11",price:120 },
+    //   {name:"X12",price:130 },
+    //   {name:"X13",price:130 },
+    //   {name:"X14",price:130 },
+    //   {name:"X15",price:130 },
+    //   {name:"X16",price:140 },
+    //   {name:"X17",price:140 },
+    //   {name:"X18",price:140 },
+    //   {name:"X19",price:140 }
+    // ];
+    // myArr.sort((p1,p2)=>{
+    //   debugger
+    //   if(p1.price < p2.price) return -1;
+    //   if(p1.price > p2.price) return 1;
+    //   return 0;
+    // })
+    // let text = "";
+    // myArr.forEach(myFunction);
+
+    // function myFunction(value){
+
+    //   text = text + value.name + " " + value.price + "<br>";
+    // }
+    // document.getElementById("demo").innerHTML = text
+
+    // let x = "";
+    // const myObj = {
+    //   name: "John",
+    //   age: 30,
+    //   cars: [
+    //     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    //     {name:"BMW", models:["320", "X3", "X5"]},
+    //     {name:"Fiat", models:["500", "Panda"]}
+    //   ]
+    // }
+    // for (let i in myObj.cars){
+    //   x = x+"<h2>" + myObj.cars[i].name + "</h2>"
+    //   for (let j in myObj.cars[i].models){
+    //     x = x + myObj.cars[i].models[j] + "<br>"
+    //   }
+    // }
+
+
+    // const obj = {counter : 0};
+
+    // Object.defineProperty(obj,"reset",{
+    //   get : function () {this.counter = 0}
+    // });
+
+    // Object.defineProperty(obj, "increment", {
+    //   get : function () {this.counter++;}
+    // });
+    // Object.defineProperty(obj, "decrement", {
+    //   get : function () {this.counter--;}
+    // });
+    // Object.defineProperty(obj, "add", {
+    //   set : function (value) {this.counter += value;}
+    // });
+    // Object.defineProperty(obj, "subtract", {
+    //   set : function (value) {this.counter -= value;}
+    // });
+
+    // obj.reset;
+    // obj.add = 5
+    // obj.subtract = 1;
+    // obj.increment;
+    // obj.decrement;
+    // function Person(first, last, age, eye) {
+    //   this.firstName = first;
+    //   this.lastName = last;
+    //   this.age = age;
+    //   this.eyeColor = eye;
+    //   this.name = function() {
+    //     return (this.firstName + " " + this.lastName)
+    //   };
+    // }
+    // function myNumber(){
+    //   let n=0;
+    //   return {
+    //     next:function(){
+    //       n = n+10;
+    //       return{value:n,done:false}
+    //     }
+    //   }
+    // }
+    // //create Itreable
+    // const n = myNumber()
+    // n.next(); //10
+    // n.next(); //20
+    // n.next(); //30
+    // const myFather = new Person("John", "Doe", 50, "blue");
+    // const person = {
+    //   FullName:function(){
+    //     return this.firstname + " " + this.lastName
+    //   }
+    // }
+    // const person1 = {
+    //   firstname:"Jordan",
+    //   lastName:"smith"
+    // }
+    // const person2 = {
+    //   firstname:"john",
+    //   lastName:"Doe"
+    // }
+    // const person3 = {
+    //   firstname:"Juliya",
+    //   lastName:"smith"
+    // }
+    // console.log(person.FullName.call(person1))
+
+    // let a = 35;
+    // let b = 45;
+
+    // console.log(a+b);
+    // const add = (function(){
+    //   let count = 0;
+    //   return function () {count += 1; return count}
+    // })();
+
+    // function myFunction(){
+
+    //   document.getElementById("demo").innerHTML = add();
+    // }
+    // function makeFunc() {
+    //   const name = 'Mozilla';
+    //   function displayName() {
+    //     console.log(name);
+    //   }
+    //   return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+    // function makeAdder(x) {
+    //   return function (y) {
+    //     return x + y;
+    //   };
+    // }
+
+    // const add5 = makeAdder(5);
+    // const add10 = makeAdder(10);
+
+    // console.log(add5(2)); // 7
+    // console.log(add10(2)); // 12
+    // class Car{
+    //   constructor(brands){
+    //     this.carname = brands
+    //   }
+    //   present(){
+    //     return "I have a "+ this.carname
+    //   }
+    // }
+    // class Model extends Car {
+    //   constructor(brands,mod){
+    //     super(brands);
+    //     this.model = mod;
+    //   }
+    //   show(){
+    //     return this.present() + ",it is a " + this.model
+    //   }
+    // }
+
+    // let myCar = new Model("Ford","Mustang")
+    // document.write(myCar.show())
+    // console.log(myCar.show());
+    // function displayName(name){
+    //   document.write(name)
+    // }
+
+    // function fullname(a,b){
+    //   return a +" "+ b
+    // }
+
+    // let result = fullname("Jordan","smith");
+    // displayName(result);
+    //  const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+    //  // call removeNeg with a callback
+    //  const posNumbers = removeNeg(myNumbers, (x) => x >= 0);
+    // //display result
+    // document.write(posNumbers)
+    // function removeNeg(myNumber,callback){
+    //   const array = [];
+    //   for(const x of myNumber){
+    //     debugger
+    //     if(callback(x)){
+    //       array.push(x)
+    //     }
+    //   }
+    //   return array
+    // }
+    // function reqListener() {
+    //   console.log(this.responseText);
+    // }
+
+    // const req = new XMLHttpRequest();
+    // req.addEventListener("load", reqListener);
+    // req.open("GET", "http://www.example.org/example.txt");
+    // req.send();
+    // async function myDisplay(){
+    //   let myPromise = new Promise(function(resolve,reject){
+    //     resolve("Hello")
+    //   })
+
+    //   document.write(await(myPromise))
+    // }
+
+    // async function myDisplay(){
+    // let myPromise = new Promise(function(resolve){
+    //   setTimeout(function(){resolve("hello");}, 3000)
+    // })  ;
+    // document.write(await(myPromise))
+    // }
+    // myDisplay()
+
+    // function checkCookie() {
+    //   let username = getCookie("username");
+    //   if (username != "") {
+    //    alert("Welcome again " + username);
+    //   } else {
+    //     username = prompt("Please enter your name:", "");
+    //     if (username != "" && username != null) {
+    //       setCookie("username", username, 365);
+    //     }
+    //   }
+    // }
+    // function setCookie(cname,cvalue,exdays){
+    //   const d = new Date();
+    //   d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    //   let expires = "expries" + d.toUTCString();
+    //   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    // }
+
+    // function getCookie(cname){
+    //   let name = cname + "=";
+    //   let decodedCookie = decodeURIComponent(document.cookie);
+    //   let ca = decodedCookie.split(';');
+    //   for (let i = 0; i < ca.length; i++){
+    //     let c = ca[i];
+    //     while (c.charAt(0) == " "){
+    //       c = c.substring(1);
+    //     }
+    //     if(c.indexOf(name)==0){
+    //       return c.substring(name.length, c.length)
+    //     }
+    //   }
+    //   return "";
+    // }
+
+    // function checkCookie(){
+    //   let user = getCookie("username");
+    //   if (user != ""){
+    //     alert("Welcome again" + user);
+    //   } else{
+    //     user = prompt("Please enter your name:","");
+    //     if(user != "" && user != null){
+    //       setCookie("username", user, 30)
+    //     }
+    //   }
+    // }
+    // const myObj = {name:"Jordan",age:"25",City:"New York"}
+    // const myJSON = JSON.stringify(myObj)
+    // localStorage.setItem("testJSON", myJSON)
+
+    // // Retrieving data
+
+    // let text = localStorage.getItem("testJSON");
+    // let obj = JSON.parse(text)
+    // document.write(obj.name + " " + obj.age + " " + obj.City)
+
+    // const myJSON = '{"name":"John", "age":30, "car":null}';
+    // const myObj = JSON.parse(myJSON)
+
+    // let text = "";
+    // for (const x in myObj){
+    //   text = text + myObj[x] + " ,"
+    // }
+    // document.write(text)
+    // const myJSON = '{"name":"John","age":"30","cars":["Ford","BMW","Fiat"]}'
+    // const myObj = JSON.parse(myJSON)
+    // let text = "";
+    // for (let i in myObj.cars){
+    //   text = text + myObj.cars[i] + ", "
+    // }
+    // document.write(text)
+
+    // function A() {
+    //   console.log('called A');
+    //   return false;
+    // }
+    // function B() {
+    //   console.log('called B');
+    //   return true;
+    // }
+
+    // console.log(B() || A());
+    // let n = 5; // you can take input from prompt
+    // let string = "";
+    // for (let i = 0; i < n; i++) {
+    //   for (let j = 0; j < n; j++) {
+    //     string += "*";
+    //   }
+
+    //   '<br>'
+    //   console.log(string)
+    // }
+    // const person = {fname: "John", lname: "Doe", age: 25};
+    // const num = ["John", "Doe", 26]
+    // let text = ''
+    // for (let x in person) {
+    //   console.log(x)
+    //   text = text + person[x] + ' '
+    // }
+    // console.log(text)
+    // let number = [16, 15, 86, 58, 19, 25, 75, 81, 93, 75, 32, 15]
+    // let text = ''
+    // number.forEach(myFunction)
+    // function myFunction(value, i, arr) {
+    //   console.log(arr)
+    //   text = value + ' '
+    //   console.log(text)
+    // }
+
+    // let number = [16, 15, 86, 58, 19, 25, 75, 81, 93, 75, 32, 15]
+    // const num = ["John", "Doe", 26]
+    // let text = ''
+    // for (let x of num) {
+    //   console.log(num)
+    //   text = text + x + ' '
+    // }
+    // console.log(text)
+
+    // let actor = [
+    //   {name: 'Actor 1', payment: 100},
+    //   {name: 'Actor 2', payment: 200},
+    //   {name: 'Actor 3', payment: 150}
+    // ]
+
+    // for (let i = 0; i < actor.length; i++) {
+    //   actor[i].payment += -10
+    // }
+    // actor.forEach((actors) => {
+    //   console.log(actors)
+    //   actors.payment = actors.payment - 10
+    // })
+    // for (let actiors of actor) {
+    //   actiors.payment += -10
+    //   // console.log(actiors)
+    // }
+    // console.log(actor)
+
+
+    // let sutdent = [
+    //   {name: 'Student 1', marsk: 45},
+    //   {name: 'Student 2', marsk: 60},
+    //   {name: 'Student 3', marsk: 35},
+    // ]
+
+    // const filt = sutdent.filter((stu) => {
+    //   return false
+    //   // console.log(stu)
+    // })
+    // console.log(filt)
+    // const dd = sutdent.map((m) => {
+    //   return {fullname: `${m.name} ${m.marsk}`}
+    // })
+    // console.log(dd)
+
+    // const admin = [1, 8, 6]
+    // let sutdent = [
+    //   {name: 'Student 1', marsk: 45},
+    //   {name: 'Student 2', marsk: 60},
+    //   {name: 'Student 3', marsk: 35},
+    // ]
+    // const user = {
+    //   name: 'xyz',
+    //   id: 6
+    // }
+    // // console.log(admin.indexOf(user.id) > -1)
+    // console.log(sutdent.includes(user.id))
+    // function printArray(arr) {
+    //   for (var i = 0; i < arr.length; i++) {
+    //     for (var j = 0; j < arr[0].length; j++) {
+    //       console.log(arr[i][j]);
+    //     }
+    //   }
+    // }
+    // var arr = [[1, 2],
+    // [3, 4],
+    // [5, 6]];
+
+    // printArray(arr) //1 2 3 4 5 6
+    // function printEven(arr) {
+    //   for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 2 == 0) {
+    //       console.log(arr[i])
+    //     }
+    //   }
+    // }
+    // let arr = [13, 23, 12, 45, 22, 48, 66, 100]
+    // printEven(arr)
+    // deleteElement = (arr, dele) => {
+    //   for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] == 56) {
+    //       arr.splice(i, 1)
+    //     }
+    //   }
+    //   return arr
+    // }
+    // var arr = [23, 56, 4, 78, 5, 63, 45, 210, 56];
+    // arr = deleteElement(arr, 56)
+    // console.log(arr)
+
+    // for (let i = 0; i < 5; i++) {
+    //   setTimeout(() => console.log(i), 5000)
+    // }
+    // numPower = (num, pow) => {
+    //   let res = 1
+    //   debugger
+    //   for (let i = 0; i < pow; i++) {
+    //     res = res * num;
+    //   }
+    //   return res
+    // }
+    // console.log(numPower(4, 3)); //64
+    // console.log(numPower(16, 2)); //256
+    let h1 = document.querySelector('#demo')
+
+    changecolor = (h1) => {
+
+      h1.style.color = 'blue'
+    }
+    changecolor(h1)
+
+  </script>
+</body>
+
+</html>
