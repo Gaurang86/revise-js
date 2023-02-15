@@ -14,10 +14,11 @@
   <script>
 
 
-    changecolor = (h1) => {
+    changecolor = (green) => {
+      const p = green
+      document.querySelector('#demo').style.color = p
     }
-    let h1 = document.querySelector('#demo').style.color = 'green'
-    changecolor(h1)
+    changecolor('#00ff00')
 
   </script>
 </body>
