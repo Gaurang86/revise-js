@@ -10,16 +10,24 @@
 
 <body>
 
-  <p id="changeColor">Hello World</p>
+  <h1 id="positiveNumber"></h1>
   <script>
+    try {
+      function finalResponse() { // 3 function
+        console.log('Hello World....');
+      }
+      function sendResponse() { // 2 function
+        finalResponse()
+      }
+      async function myDisplay() { // 1 function
+        console.log('Hello');
+        await setTimeout(function () {sendResponse()}, 3000)
+      }
+      myDisplay()
+    } catch (error) {
+      console.log(error);
 
-
-    changeColor = (color) => {
-      const textColor = color
-      document.querySelector('#changeColor').style.color = textColor
     }
-    changeColor('#00ff00')
-
   </script>
 </body>
 
