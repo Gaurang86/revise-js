@@ -11,26 +11,27 @@
 <body>
 
   <h1 id="positiveNumber"></h1>
+
   <script>
-
-
-    try {
-      function sendResponse() {
-        setTimeout(() => {
-          console.log('Hello World');
-        }, 3000);
-      }
-      async function myDisplay() {
-        console.log('Hello');
-        await sendResponse()
-        console.log('hello');
-      }
-      myDisplay()
-    } catch (error) {
-      console.log(error);
-
-    }
-
+    let arr = [
+      {id: 1, display: false, write: true},
+      {id: 2, display: true, write: true},
+      {id: 3, display: true, write: true},
+      {id: 4, display: false, write: false},
+      {id: 5, display: false, write: false},
+      {id: 6, display: false, write: false}
+    ]
+    // console.log(arr);
+    const trueDisplayObjects = arr.filter(obj => obj.display === true);
+    console.log(trueDisplayObjects);
+    const falseDisplayObjects = arr.filter(obj => obj.display === false);
+    console.log(falseDisplayObjects);
+    const trueWriteObjects = arr.filter(obj => obj.write === true);
+    console.log(trueWriteObjects);
+    const falseWriteObjects = arr.filter(obj => obj.write === false);
+    console.log(falseWriteObjects);
+    const trueandfalseObject = arr.filter(obj => obj.display === false && obj.write === true)
+    console.log(trueandfalseObject);
   </script>
 </body>
 
