@@ -21,17 +21,12 @@
       {id: 5, display: false, write: false},
       {id: 6, display: false, write: false}
     ]
-    // console.log(arr);
-    const trueDisplayObjects = arr.filter(obj => obj.display === true);
-    console.log(trueDisplayObjects);
-    const falseDisplayObjects = arr.filter(obj => obj.display === false);
-    console.log(falseDisplayObjects);
-    const trueWriteObjects = arr.filter(obj => obj.write === true);
-    console.log(trueWriteObjects);
-    const falseWriteObjects = arr.filter(obj => obj.write === false);
-    console.log(falseWriteObjects);
-    const trueandfalseObject = arr.filter(obj => obj.display === false && obj.write === true)
-    console.log(trueandfalseObject);
+    const trueDisplayObject = arr.filter(obj => obj.display === false)
+    console.log(trueDisplayObject);
+    const trueWriteObject = arr.filter(obj => obj.write === false)
+    console.log(trueWriteObject);
+    const falsetrueObject = arr.filter(obj => obj.display === false && obj.write === true)
+    console.log(falsetrueObject);
   </script>
 </body>
 
