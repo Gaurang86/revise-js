@@ -12,22 +12,25 @@
 
   <h1 id="positiveNumber"></h1>
   <script>
+
+
     try {
-      function finalResponse() { // 3 function
-        console.log('Hello World....');
+      function sendResponse() {
+        setTimeout(() => {
+          console.log('Hello World');
+        }, 3000);
       }
-      function sendResponse() { // 2 function
-        finalResponse()
-      }
-      async function myDisplay() { // 1 function
+      async function myDisplay() {
         console.log('Hello');
-        await setTimeout(function () {sendResponse()}, 3000)
+        await sendResponse()
+        console.log('hello');
       }
       myDisplay()
     } catch (error) {
       console.log(error);
 
     }
+
   </script>
 </body>
 
