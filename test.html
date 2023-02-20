@@ -21,13 +21,15 @@
     }
     function fun4(param1, param2) {
       console.log("This is fun 4, and the parameters are: " + param1 + " and " + param2);
+      fun2(param2)
     }
     function fun5(param1, param2) {
       console.log("This is fun 5, and the parameters are: " + param1 + " and " + param2);
+      fun3(param2)
     }
     fun1();
-    fun4(fun2("parameter for fun 2"), "second parameter for fun 4");
-    fun5(fun3("parameter for fun 3"), "second parameter for fun 5");
+    fun4("second parameter for fun 4", "parameter for fun 4");
+    fun5("second parameter for fun 5", "parameter for fun 5");
   </script>
 </body>
 
